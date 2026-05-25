@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Connecting...</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <style>
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background-color: #060b14; display: flex;
+            justify-content: center; align-items: center;
+            overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .ambient-glow {
+            position: absolute; width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(0,0,0,0) 70%);
+            z-index: 1;
+        }
+
+        .loader-wrapper {
+            position: relative; z-index: 2;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        /* THE CHROME CONTAINER: Holds everything together */
+        .logo-container {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* THE ROTATING BLUE LIGHT RING (Pure CSS, Watermark-Free) */
+        .rotating-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; /* Makes it a perfect circle */
+            border: 3px solid transparent;
+            border-top: 3px solid #38bdf8;    /* Neon Blue Light segment */
+            border-right: 3px solid #0284c7;  /* Darker Blue fade segment */
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.6); /* Ambient light radiation */
+            animation: spinRing 1.5s linear infinite; /* Keeps it spinning forever */
+        }
+
+        /* YOUR FIXED SQUARE LOGO IMAGE */
+        .app-logo {
+            position: absolute;
+            width: 84px;
+            height: 84px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            object-fit: cover;
+            z-index: 3;
+        }
+
+        .status-text {
+            color: #ffffff; font-size: 11px; letter-spacing: 4px;
+            text-transform: uppercase; margin-top: 30px; opacity: 0.5; font-weight: 600;
+        }
+
+        /* THE ANIMATION ENGINE: Rotates the light circle 360 degrees smoothly */
+        @keyframes spinRing {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                // AUTOMATED HANDOVER: Points directly to your secure V5.2 live engine core link
+                window.location.replace("https://script.google.com/macros/s/AKfycbztLHekSAy6vBf9f-MCZOmZA1WXra-F0s9l_uTjfSA3zTYeQ3dgHRDY4Jyo4CeCa1c/exec");
+            }, 1800); // Bumped to 1.8 seconds so you can actually appreciate the spin effect
+        });
+    </script>
+</head>
+<body>
+    <div class="ambient-glow"></div>
+    <div class="loader-wrapper">
+        <div class="logo-container">
+            <div class="rotating-ring"></div>
+            <img class="app-logo" src="https://docs.google.com/thumbnail?id=1k1Qet1Khs7_rqouo33H7hPgITaJrUKNF&sz=w500">
+        </div>
+        <div class="status-text">Securing Node</div>
+    </div>
+</body>
+</html>
