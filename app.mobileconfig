@@ -5,18 +5,16 @@
     <key>PayloadContent</key>
     <array>
         <dict>
-            <key>Label</key>
-            <string>SCOPE</string>
-            <key>URL</key>
-            <string>https://dharmanssp.github.io/scope/</string>
             <key>FullScreen</key>
             <true/>
             <key>IsRemovable</key>
             <true/>
+            <key>Label</key>
+            <string>SCOPE</string>
             <key>PayloadDescription</key>
-            <string>Configures S.C.O.P.E. System Web Shortcut</string>
+            <string>Configures Web Clip</string>
             <key>PayloadDisplayName</key>
-            <string>Web Clip (SCOPE)</string>
+            <string>SCOPE Web Clip</string>
             <key>PayloadIdentifier</key>
             <string>com.bthenvironmental.scope.webclip</string>
             <key>PayloadType</key>
@@ -25,14 +23,18 @@
             <string>E7C3A2D4-991A-4836-8E1E-3298CFA9A4E2</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
+            <key>URL</key>
+            <string>https://dharmanssp.github.io/scope/</string>
         </dict>
     </array>
+    <key>PayloadDescription</key>
+    <string>S.C.O.P.E. System Mobile Deployment Configuration Profile</string>
     <key>PayloadDisplayName</key>
     <string>S.C.O.P.E. Installer</string>
     <key>PayloadIdentifier</key>
     <string>com.bthenvironmental.scope</string>
-    <key>PayloadRemovalDisallowed</key>
-    <false/>
+    <key>PayloadOrganization</key>
+    <string>BTH Environmental</string>
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadUUID</key>
