@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Connecting...</title>
+    <title>S.C.O.P.E. V6 | Connecting...</title>
     
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,14 +14,16 @@
     <style>
         body, html {
             margin: 0; padding: 0; width: 100%; height: 100%;
-            background-color: #060b14; display: flex;
+            /* Matched exactly to the V6 Auth Panel Slate Background */
+            background-color: #0f172a; 
+            display: flex;
             justify-content: center; align-items: center;
-            overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
         .ambient-glow {
             position: absolute; width: 300px; height: 300px;
-            background: radial-gradient(circle, rgba(56, 189, 248, 0.12) 0%, rgba(0,0,0,0) 70%);
+            background: radial-gradient(circle, rgba(2, 132, 199, 0.2) 0%, rgba(0,0,0,0) 70%);
             z-index: 1;
         }
 
@@ -30,58 +32,71 @@
             display: flex; flex-direction: column; align-items: center;
         }
 
-        /* THE CHROME CONTAINER: Holds everything together */
         .logo-container {
             position: relative;
-            width: 110px;
-            height: 110px;
+            width: 120px;
+            height: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        /* THE ROTATING BLUE LIGHT RING (Pure CSS, Watermark-Free) */
         .rotating-ring {
             position: absolute;
             width: 100%;
             height: 100%;
-            border-radius: 50%; /* Makes it a perfect circle */
+            border-radius: 50%;
             border: 3px solid transparent;
-            border-top: 3px solid #38bdf8;    /* Neon Blue Light segment */
-            border-right: 3px solid #0284c7;  /* Darker Blue fade segment */
-            box-shadow: 0 0 15px rgba(56, 189, 248, 0.6); /* Ambient light radiation */
-            animation: spinRing 1.5s linear infinite; /* Keeps it spinning forever */
+            border-top: 3px solid #38bdf8;    
+            border-right: 3px solid #0284c7;  
+            box-shadow: 0 0 15px rgba(2, 132, 199, 0.4); 
+            animation: spinRing 1.5s linear infinite; 
         }
 
-        /* YOUR FIXED SQUARE LOGO IMAGE */
-        .app-logo {
+        /* NEW V6 TEXT LOGO (Replaces old image) */
+        .app-logo-text {
             position: absolute;
-            width: 84px;
-            height: 84px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-            object-fit: cover;
             z-index: 3;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 900;
+            text-align: center;
+            letter-spacing: 2px;
+            line-height: 1.2;
+        }
+
+        .app-logo-text span {
+            display: block;
+            color: #38bdf8;
+            font-size: 12px;
+            letter-spacing: 4px;
+            margin-top: 2px;
         }
 
         .status-text {
-            color: #ffffff; font-size: 11px; letter-spacing: 4px;
-            text-transform: uppercase; margin-top: 30px; opacity: 0.5; font-weight: 600;
+            color: #94a3b8; font-size: 11px; letter-spacing: 4px;
+            text-transform: uppercase; margin-top: 35px; font-weight: 600;
+            animation: pulseText 1.5s infinite;
         }
 
-        /* THE ANIMATION ENGINE: Rotates the light circle 360 degrees smoothly */
         @keyframes spinRing {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulseText {
+            0% { opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { opacity: 0.4; }
         }
     </style>
 
     <script>
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
-                // AUTOMATED HANDOVER: Points directly to your secure V5.2 live engine core link
-                window.location.replace("https://script.google.com/macros/s/AKfycbztLHekSAy6vBf9f-MCZOmZA1WXra-F0s9l_uTjfSA3zTYeQ3dgHRDY4Jyo4CeCa1c/exec");
-            }, 1800); // Bumped to 1.8 seconds so you can actually appreciate the spin effect
+                // V6 SYSTEM TARGET URL
+                window.location.replace("https://script.google.com/macros/s/AKfycbx9bRBEYoyq_DkWKTrMbRSWm6eEMIaOL8dIEwWaNaGVTHuFVAkYmbkIC_eZ50d3MD8c/exec");
+            }, 1800); 
         });
     </script>
 </head>
@@ -90,9 +105,11 @@
     <div class="loader-wrapper">
         <div class="logo-container">
             <div class="rotating-ring"></div>
-            <img class="app-logo" src="https://docs.google.com/thumbnail?id=1k1Qet1Khs7_rqouo33H7hPgITaJrUKNF&sz=w500">
+            <div class="app-logo-text">
+                BTH<span>SCOPE</span>
+            </div>
         </div>
-        <div class="status-text">Securing Node</div>
+        <div class="status-text">Securing V6 Node</div>
     </div>
 </body>
 </html>
